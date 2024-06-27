@@ -14,7 +14,7 @@ body{
 }
 
 #nuvens{
-  top: 70px;
+  top: 100px;
   position: absolute;
   width: 30%;
   animation: nuvens 15s infinite linear;
@@ -37,5 +37,19 @@ body{
 #linkContato{
   position: relative;
   left: 40%;
+  
 }
 
+#imgContato{
+  width: 7%;
+}
+
+.sobremim{
+  position: relative;
+  left: 9%;
+  top: 18vh;
+}
+
+#TituloCargo{
+  
+}
