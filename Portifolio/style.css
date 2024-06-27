@@ -4,8 +4,38 @@
   padding: 0;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 .background{
-  background: linear-gradient(rgb(118, 209, 224), rgb(224, 252, 255)) ;
+  background: linear-gradient(rgb(92, 226, 247), rgb(143, 244, 255), rgb(255, 255, 255)) ;
   height: 100vh;
+}
+
+#nuvens{
+  top: 70px;
+  position: absolute;
+  width: 30%;
+  animation: nuvens 15s infinite linear;
+}
+
+@keyframes nuvens {
+  from{
+    right: -40%;
+  }
+  to{
+    right: 100%;
+  }
+}
+
+#logo{
+  width: 30%;
+  margin: 20px;
+}
+
+#linkContato{
+  position: relative;
+  left: 40%;
 }
 
