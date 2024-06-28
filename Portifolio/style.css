@@ -14,7 +14,7 @@ body{
 }
 
 #nuvens{
-  top: 100px;
+  top: 60px;
   position: absolute;
   width: 30%;
   animation: nuvens 15s infinite linear;
@@ -47,14 +47,14 @@ body{
 #TituloCargo{
   position: relative;
   left: 9%;
-  top: 10vh;
+  top: 6vh;
   width: 40%;
 }
 
 .sobremim{
   position: relative;
   left: 6.5%;
-  top: 10vh;
+  top: 5vh;
   background-color: #D84C20;
   padding: 25px;
   width: 45%;
@@ -98,5 +98,15 @@ body{
   -webkit-text-stroke-width: 1px;
   font-weight: 1000;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.minhafoto{
+  width: 300px;
+  height: 37vh;
+  border: 10px solid blue;
+  position: absolute;
+  top: 38vh;
+  right: 10%;
+  border-radius: 50%;
 }
 
