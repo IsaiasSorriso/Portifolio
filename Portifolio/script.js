@@ -1,10 +1,19 @@
-document.addEventListener('DOMContentLoaded', (event) => {
-    
-    const imageElement = document.getElementById('mario');
-    // Tempo em milissegundos após o qual a imagem será trocada
-    const changeTime = 1000; // 1 segundo
+var animacao = document.getElementById('mario');
+
+animacao.onclick = function () {
+    animacao.classList.add('Animação')
+    animacao.src = 'imgs/mariopulando.png';
+    const changeTime = 1500;
+    const Time = 3000;
 
     setTimeout(() => {
-        imageElement.src = 'mariopulando.jpg'; // Troca para a nova imagem
+        animacao.src = 'imgs/marioperdendo.png'; // Troca para a nova imagem
     }, changeTime);
-});
+
+    setTimeout(() => {
+        animacao.classList.remove('Animação');
+        animacao.style.bottom = ('-20vh');
+    }, Time);
+
+    
+}

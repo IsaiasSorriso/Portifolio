@@ -167,14 +167,27 @@ body{
   bottom: 2.5vh;
   left: 15%;
   cursor: pointer;
-  animation: moveImage 1s linear;
+  z-index: 111;
+}
+
+.Animação{
+  animation: moveImage 3s linear;
 }
 
 @keyframes moveImage {
-  from{
-    transform: translateY(80px);
+  0%{
+    transform: translateY(0px);
   }
-  to{
-    transform: translateY(40px);
+  25%{
+    transform: translateY(-80px);
+  }
+  50%{
+    transform: translateY(0px);
+  }
+  75%{
+    transform: translateY(-40px);
+  }
+  100%{
+    transform: translateY(100px);
   }
 }
