@@ -12,8 +12,10 @@ animacao.onclick = function () {
 
     setTimeout(() => {
         animacao.classList.remove('Animação');
-        animacao.style.bottom = ('-20vh');
+        animacao.style.bottom = ('-30vh');
     }, Time);
 
     
 }
+const exampleEl = document.getElementById('example')
+const tooltip = new bootstrap.Tooltip(exampleEl, options)
