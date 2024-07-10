@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oxanium', cursive;
+}
+
+body {
+  text-align: center;
+  background: linear-gradient(to bottom, #6ab7f5, #fff);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  display: inline-block;
+  margin-top: 2%;
+  padding: 15px;
+  position: relative;
+  transition: transform 0.5s ease;
+}
+
+
+.pokedex {
+  width: 100%;
+  max-width: 425px;
+}
+
+.pokemon__image {
+  position: absolute;
+  bottom: 55%;
+  left: 50%;
+  transform: translate(-63%, 20%);
+  height: 18%;
+}
+
+.pokemon__data {
+  position: absolute;
+  font-weight: 600;
+  color: #aaa;
+  top: 54.5%;
+  right: 27%;
+  font-size: clamp(8px, 5vw, 25px);
+}
+
+.pokemon__name {
+  color: #3a444d;
+  text-transform: capitalize;
+}
+
+.form {
+  position: absolute;
+  width: 65%;
+  top: 63%;
+  left: 13.5%;
+}
+
+.input__search {
+  width: 100%;
+  padding: 4%;
+  outline: none;
+  border: 2px solid #333;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #3a444d;
+  font-size: clamp(8px, 5vw, 1rem);
+  box-shadow: -3px 4px 0 #888, -5px 7px 0 #333
+}
+
+.buttons,
+.button_carta {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  width: 65%;
+  transform: translate(-57%, 0);
+  display: flex;
+  gap: 20px;
+}
+.button_carta{
+  bottom: 19%;
+  left: 65%;
+}
+
+.button{
+  width: 50%;
+  padding: 4%;
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-size: clamp(8px, 5vw, 1rem);
+  font-weight: 600;
+  color: white;
+  background-color: #444;
+  box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+}
+
+.button:active {
+  box-shadow: inset -4px 4px 0 #222;
+  font-size: 0.9rem;
+}
+
+/* CARTA COM OS DADOS DO POKEMON */
+
+.main_carta{
+  position: absolute;
+  top: 30%;
+  right: 20%;
+  display: none;
+} 
+
+.card {
+  display: flex;
+  align-items: center;
+  background: rgb(255,166,0);
+  background: linear-gradient(0deg, rgba(255,166,0,1) 0%, rgba(255,255,255,1) 100%);
+  border: 12px solid yellow;
+  border-radius: 10px;
+  box-shadow: 0px 3px 5px 0 #111111;
+  transition: transform 5s ease;
+  width: 18rem;
+}
+
+.card img{
+  width: 50%;
+}
+
+.card-body{
+  position: relative;
+  top: -10px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.img_pokemon{
+  margin-top: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 150px;
+  border: wheat solid 3px;
+  background-image: url(../images/fundo_pokemon_card.jpg);
+  background-size: cover;
+  margin-top: 20%;
+}
+
+.card h5{
+  position: absolute;
+  left: 4%;
+  top: 17px;
+  font-size: clamp(8px, 5vw, 25px);
+  font-weight: 600;
+  color: #3a3737;
+  text-transform: capitalize;
+}
+
+.card h3{
+  font-size: 1em;
+}
+
+
+.main_carta .list-group{
+  border: none;
+}
+.main_carta .list-group li{
+  list-style: none;  
+}
+
+.div_habi_pokemon,
+.div_tipo_pokemon{
+  position: relative;
+ 
+  width: 90%;
+  left: 3%;
+}
+
+.div_habi_pokemon{
+ top: -25px;
+}
+.div_tipo_pokemon{
+  top: -10px;
+  display: flex;
+  align-items: center;
+}
+
+.div_habi_pokemon p,
+.div_tipo_pokemon p{
+  display: flex;
+  align-items: flex-start;
+  position: absolute;
+  top: -12px;
+}
+
+.div_habi_pokemon p{
+  font-size: 12px;
+}
+.div_tipo_pokemon p{
+  font-size: 12px;
+}
+
+#habilidades-pokemon li,
+#tipo-pokemon li{
+  
+  font-weight: 600;
+  color: #3a3737;
+  text-transform: capitalize;
+  display: flex;
+  align-items: flex-start;
+}
+#habilidades-pokemon li{
+  font-size: 20px;
+}
+#tipo-pokemon li{
+  font-size: 15px;
+  
+}
+
+.fechar_card{
+  border-radius: 50%;
+  background-color: #f13232;
+  border: none;
+  width: 60px;
+  height: 60px;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fff;
+  position: absolute;
+  bottom: -8%;
+  right: -11%;
+}

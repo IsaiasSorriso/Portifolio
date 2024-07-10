@@ -151,8 +151,16 @@ body{
 
 #tituloProjetos{
   width: 150px;
+  margin: 0;
 }
-
+.tituloProjeto{
+  background-color: #D84C20;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
 .verprojetos{
   position: absolute;
   bottom: 2.5vh;
@@ -194,11 +202,6 @@ body{
   100%{
     transform: translateY(100px);
   }
-}
-
-.tituloProjeto{
-  position: relative;
-  top: -15px;
 }
 
 .backgrundoProjetosFront{
