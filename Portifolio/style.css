@@ -149,30 +149,6 @@ body{
   background-size: 37px;
 }
 
-#tituloProjetos{
-  width: 150px;
-  margin: 0;
-}
-.tituloProjeto{
-  background-color: #D84C20;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 30px;
-}
-.verprojetos{
-  position: absolute;
-  bottom: 2.5vh;
-  left: 4%;
-}
-
-.verprojetos p{
-  position: absolute;
-  bottom: 10vh;
-  width: 200px;
-}
-
 #mario{
   width: 70px;
   position: absolute;
@@ -265,10 +241,37 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 40vh;
+  height: 50vh;
   width: 25%;
+  background-color: #D84C20;
+  position: relative;
 }
 
+#tituloProjetos{
+  width: 150px;
+  margin: 0;
+}
+
+.tituloProjeto{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -50px;
+  height: 50px;
+}
+
+.verprojetos{
+  position: absolute;
+  bottom: 2.5vh;
+  left: 4%;
+}
+
+.verprojetos p{
+  position: absolute;
+  bottom: 10vh;
+  width: 200px;
+}
 .trabalho{
   width: 90%;
   height: 30vh;
