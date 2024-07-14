@@ -150,9 +150,9 @@ body{
 }
 
 #mario{
-  width: 70px;
+  width: 50px;
   position: absolute;
-  bottom: 2.5vh;
+  bottom: 3vh;
   left: 15%;
   cursor: pointer;
   z-index: 111;
@@ -234,6 +234,7 @@ body{
   justify-content: center;
   align-items: center;
   gap: 10%;
+  z-index: 1111;
 }
 
 .projeto{
@@ -305,44 +306,6 @@ body{
   border-bottom: 3px solid rgb(0, 255, 0);
 }
 
-
-
-
-.backgrundoProjetosBack{
-  background: linear-gradient(rgb(0, 0, 0), rgb(70, 25, 25), rgb(109, 16, 16)) ;
-  height: 100vh;
-} 
-
-.chao3{
-  width: 100%;
-  height: 6vh;
-  position: absolute;
-  bottom: -200vh;
-  background-image: url(imgs/chao3.png);
-  background-size: 60px;
-}
-
-#back{
-  position: absolute;
-  left: 1.3%;
-  width: 30%;
-  top: 210vh;
-}
-
-#Projetos2{
-  position: absolute;
-  left: 5%;
-  width: 15%;
-  top: 205vh;
-}
-
-#nuvens3{
-  top: 60px;
-  position: relative;
-  width: 30%;
-  animation: nuvens 10s infinite linear;
-}
-
 .btn{
   cursor: pointer;
   width: fit-content;
@@ -368,4 +331,45 @@ body{
 }
 .tooltip-arrow::before {
   border-top-color: #555 !important;
+}
+
+#tuboMario{
+  width: 120px;
+  transform: rotate(-90deg);
+}
+
+.tuboMario{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#tuboMario2{
+  width: 120px;
+  transform: rotate(90deg);
+}
+
+.tuboMario2{
+  position: absolute;
+  left: 0;
+  bottom: -100dvh;
+}
+
+.castelo{
+  position: absolute;
+  right: -15%;
+  bottom: -100dvh;
+}
+#casteloMario{
+  width: 450px;
+}
+
+#princesaMario{
+  transform: scaleX(-1);
+  width: 120px;
+}
+.princesaMario{
+  position: absolute;
+  right: 15%;
+  bottom: -95dvh;
 }
