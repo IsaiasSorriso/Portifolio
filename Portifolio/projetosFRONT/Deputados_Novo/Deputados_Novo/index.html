@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deputados</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+  <header>
+    <input type="text" id="search-bar" placeholder="Pesquisar por nome ou partido...">
+  </header>
+  <div class="container" id="container">
+    <h1 id="titulo">Deputados</h1>
+    <ul id="deputados-list">
+      <!-- lista de todos os deputados -->
+    </ul>
+  
+    <div id="deputado-detalhes" class="hidden">
+      <h2>Detalhes do Deputado</h2>
+      <div class="all_dados" id="all_dados">
+        <img id="deputado-foto" src="" alt="Foto do Deputado">
+        <div class="dados_reais">
+          <strong>Nome:</strong> <input type="text" id="deputado-nome">
+          <strong>Sexo:</strong> <input type="text" id="deputado-sexo">
+          <strong>Email:</strong> <input type="text" id="deputado-email">
+          <strong>Partido:</strong> <input type="text" id="deputado-partido">
+        </div>
+        <button type="submit" id="fechar_dados_reais">X</button>
+      </div>
+      <form id="cep-form">
+        <label for="cep-input">CEP:</label>
+        <input type="text" id="cep-input" placeholder="Digite o CEP para o Cadastro..." required>
+        <button type="submit">Buscar</button>
+      </form>
+      <div id="cep-details" class="hidden">
+        <div class="dados_cep">
+          <p><strong>Rua:</strong> <input type="text" id="logradouro"></p>
+          <p><strong>Bairro:</strong> <input type="text" id="bairro"></p>
+        </div>
+        <div class="dados_cep">
+          <p><strong>Cidade:</strong> <input type="text" id="localidade"></p>
+          <p><strong>Estado:</strong> <input type="text" id="uf"></p>
+        </div>
+        <div class="dados_cep">
+          <p><strong>Longitude:</strong> <span id="longitude"></span></p>
+          <p><strong>Latitude:</strong> <span id="latitude"></span></p>
+        </div>
+        <div class="botoes">
+          <button type="submit" id="ver_mapa" class="hidden">Ver Mapa</button>
+          <button type="submit" id="salvar">Salvar</button>
+        </div>
+        <div id="mapa" class="hidden" >
+          <div id="map"></div>
+          <button type="submit" id="fechar_mapa">Fechar Mapa</button>
+      </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
