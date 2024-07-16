@@ -10,11 +10,6 @@ animacao.onclick = function () {
         animacao.src = 'imgs/marioperdendo.png'; // Troca para a nova imagem
     }, changeTime);
 
-    setTimeout(() => {
-        animacao.classList.remove('Animação');
-        animacao.style.bottom = ('-30vh');
-    }, Time);
-
     
 }
 

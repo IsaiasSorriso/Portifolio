@@ -149,37 +149,6 @@ body{
   background-size: 37px;
 }
 
-#mario{
-  width: 50px;
-  position: absolute;
-  bottom: 3vh;
-  left: 15%;
-  cursor: pointer;
-  z-index: 111;
-}
-
-.Animação{
-  animation: moveImage 2s linear;
-}
-
-@keyframes moveImage {
-  0%{
-    transform: translateY(0px);
-  }
-  25%{
-    transform: translateY(-80px);
-  }
-  50%{
-    transform: translateY(0px);
-  }
-  75%{
-    transform: translateY(-40px);
-  }
-  100%{
-    transform: translateY(100px);
-  }
-}
-
 .backgrundoProjetosFront{
   background: linear-gradient(rgb(255, 151, 31), rgb(247, 156, 53), rgb(245, 188, 114)) ;
   height: 100vh;
@@ -244,7 +213,7 @@ body{
   align-items: center;
   height: 50vh;
   width: 25%;
-  background-color: #D84C20;
+  background-color: #d84619;
   position: relative;
 }
 
@@ -333,15 +302,56 @@ body{
   border-top-color: #555 !important;
 }
 
+#mario{
+  width: 50px;
+  position: absolute;
+  bottom: 3vh;
+  left: 15%;
+  cursor: pointer;
+  z-index: 11;
+}
+
+.Animação{
+  animation: moveImage 10s linear;
+}
+
+@keyframes moveImage {
+  0%{
+    transform: translateY(0px);
+  }
+  25%{
+    transform: translateY(-80px);
+  }
+  50%{
+    transform: translateY(0px);
+  }
+  60%{
+    transform: translate(1600px)
+  }
+  70%{
+    transform: translate(1600px);
+    transform: translateY(97dvh);
+  }
+  80%{
+    transform: translateY(97dvh);
+  }
+  100%{
+    transform: translate(620px);
+    transform: translateY(97dvh);
+  }
+}
+
 #tuboMario{
   width: 120px;
   transform: rotate(-90deg);
+  
 }
 
 .tuboMario{
   position: absolute;
   right: 0;
   bottom: 0;
+  z-index: 111;
 }
 
 #tuboMario2{
