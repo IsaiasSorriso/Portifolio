@@ -1,0 +1,296 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #111;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+nav h1 {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f0a500;
+}
+
+nav button {
+    background-color: #f0a500;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+    background-color: #d18b00;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #111;
+    color: #fff;
+    padding: 2rem 0;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    margin-bottom: 1.5rem;
+}
+
+.hero button {
+    background-color: #f0a500;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #d18b00;
+}
+
+.trusted-by {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.trusted-by img {
+    margin: 0 1rem;
+}
+
+/* Highlighted Projects Section */
+.highlighted-projects {
+    background-color: #fff;
+    color: #333;
+    padding: 2rem 0;
+}
+
+.highlighted-projects h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.project {
+    max-width: 300px;
+    margin: 0 auto 2rem;
+    text-align: center;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.project h4 {
+    margin-bottom: 0.5rem;
+}
+
+.project p {
+    margin-bottom: 1rem;
+}
+
+.project a {
+    color: #f0a500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project a:hover {
+    color: #d18b00;
+}
+
+/* Media Mentions Section */
+.media-mentions {
+    background-color: #111;
+    color: #fff;
+    padding: 2rem 0;
+}
+
+.media-mentions h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.media-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.media-logos img {
+    margin: 0.5rem;
+}
+
+/* Mission Section */
+.mission {
+    background-color: #fff;
+    color: #333;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.mission h3 {
+    margin-bottom: 1rem;
+}
+
+.mission p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 2rem 0;
+}
+
+.contact h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact form button {
+    background-color: #f0a500;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact form button:hover {
+    background-color: #d18b00;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-content nav {
+    margin-bottom: 1rem;
+}
+
+.footer-content nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.footer-content nav a:hover {
+    color: #f0a500;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+
+.social-media a {
+    margin: 0 0.5rem;
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
+    transition: opacity 0.3s ease;
+}
+
+.social-media img:hover {
+    opacity: 0.7;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .hero-content {
+        text-align: left;
+    }
+
+    .project {
+        display: inline-block;
+        margin: 1rem;
+    }
+}
