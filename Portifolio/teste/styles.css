@@ -114,7 +114,7 @@ nav button:hover {
 .highlighted-projects {
     background-color: #fff;
     color: #333;
-    padding: 2rem 0;
+    padding-left: 2rem 0;
 }
 
 .highlighted-projects h3 {
@@ -150,28 +150,6 @@ nav button:hover {
 
 .project a:hover {
     color: #d18b00;
-}
-
-/* Media Mentions Section */
-.media-mentions {
-    background-color: #111;
-    color: #fff;
-    padding: 2rem 0;
-}
-
-.media-mentions h3 {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.media-logos {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.media-logos img {
-    margin: 0.5rem;
 }
 
 /* Mission Section */
