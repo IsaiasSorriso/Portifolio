@@ -2,11 +2,8 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <link
-      rel="shortcut icon"
-      href="../imgs/icon-Title.png"
-      type="image/x-icon"
-    />
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../imgs/icon-Title.png" type="image/x-icon"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfólio Isaias Belarmina de Souza</title>
     <link rel="stylesheet" href="styles.css" />
@@ -14,17 +11,21 @@
   <body>
     <header>
       <nav>
-        <h1>Belarmina</h1>
+        <button class="button" data-text="Awesome">
+          <span class="actual-text">&nbsp;Belarmina &nbsp;</span>
+          <span aria-hidden="true" class="front-text"
+            >&nbsp;Belarmina&nbsp;</span
+          >
+        </button>
       </nav>
     </header>
 
     <section class="hero">
       <div class="hero-content">
-        <h2>Portfólio de um Desenvolvedor de Software</h2>
-        <p>
-          Explore os projetos e habilidades de João Silva, um desenvolvedor de
-          software dedicado à criação de soluções inovadoras.
-        </p>
+        <div class="hero-titles">
+          <h1>Desenvolvedor</h1>
+          <h2>Front-End</h2>
+        </div>
         <button class="Btn-hero">
           <svg
             class="svgIcon-hero"
@@ -197,7 +198,7 @@
               </p>
             </div>
             <div class="footer-card">
-              <p class="tag">#HTML #CSS</p>
+              <p class="tag">#HTML #CSS #JS</p>
               <button type="button" class="action">
                 <a href="">Get started</a>
               </button>
@@ -223,9 +224,10 @@
         <div class="timeline-item left">
           <div class="timeline-content">
             <div class="card-timeline">
-              <h3 class="card__title">Etec Desenvolvimento de Sistemas</h3>
+              <h3 class="card__title">Etec de Itaquera </h3>
               <p class="card__content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Curso: Desenvolvimento de Sistemas <br>
+                Representante de Sala
               </p>
               <div class="card__date">06/2021 á 12/2022</div>
             </div>
@@ -234,105 +236,109 @@
         <div class="timeline-item right">
           <div class="timeline-content">
             <div class="card-timeline">
-              <h3 class="card__title">Title</h3>
+              <h3 class="card__title">Fatec de Itaquera</h3>
               <p class="card__content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                1°Semestre <br>
+                Curso: Desenvolvimento de Software em Multiplataforma, <br>
+                Representante de Sala
               </p>
-              <div class="card__date">April 15, 2022</div>
+              <div class="card__date">08/2023</div>
             </div>
           </div>
         </div>
         <div class="timeline-item left">
           <div class="timeline-content">
             <div class="card-timeline">
-              <h3 class="card__title">Etec</h3>
+              <h3 class="card__title">Cursos Cisco</h3>
               <p class="card__content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cybersecurity Essentials, <br>
+                Sistemas Operacionais e Redes De Computadores
               </p>
-              <div class="card__date">April 15, 2022</div>
+              <div class="card__date">08/2023 á 12/2023</div>
             </div>
           </div>
         </div>
         <div class="timeline-item right">
           <div class="timeline-content">
             <div class="card-timeline">
-              <h3 class="card__title">Title</h3>
+              <h3 class="card__title">Fatec de Itaquera</h3>
               <p class="card__content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                2°Semestre <br>
+                Cursos: Java Script e <br>
+                BootStrap
               </p>
-              <div class="card__date">April 15, 2022</div>
+              <div class="card__date">02/2024 á 06/2024</div>
             </div>
           </div>
         </div>
         <div class="timeline-item left">
           <div class="timeline-content">
             <div class="card-timeline">
-              <h3 class="card__title">Title</h3>
+              <h3 class="card__title">Fatec de Itaquera</h3>
               <p class="card__content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                2°Semestre <br>
+                Criando a DA (Diretório Acadêmico),
+                Coordenador de Formação Acadêmica e Representante de Sala
               </p>
-              <div class="card__date">April 15, 2022</div>
+              <div class="card__date">05/2024</div>
             </div>
           </div>
         </div>
         <div class="timeline-item right">
           <div class="timeline-content">
             <div class="card-timeline">
-              <h3 class="card__title">Title</h3>
+              <h3 class="card__title">Fatec de Itaquera</h3>
               <p class="card__content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                3°Semestre (Atualmente): <br>
+                Coordenador de Formação Acadêmica e Representante de Sala
               </p>
-              <div class="card__date">April 15, 2022</div>
+              <div class="card__date">8/2024</div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="contact">
-      <div class="form-container">
-        <form class="form">
-          <div class="form-group">
-            <label for="email">Company Email</label>
-            <input required="" name="email" id="email" type="text" />
-          </div>
-          <div class="form-group">
-            <label for="textarea">How Can We Help You?</label>
-            <textarea
-              required=""
-              cols="50"
-              rows="10"
-              id="textarea"
-              name="textarea"
-            >
-            </textarea>
-          </div>
-          <button class="btn-contact">
-            <div class="svg-wrapper-1">
-              <div class="svg-wrapper">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="24"
-                  height="24"
-                >
-                  <path fill="none" d="M0 0h24v24H0z"></path>
-                  <path
-                    fill="currentColor"
-                    d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
-                  ></path>
-                </svg>
-              </div>
+    <section class="Contact-email">
+      <div class="wrapper">
+        <div class="card-switch">
+          <label class="switch">
+            <div class="flip-card__inner">
+              <div class="flip-card__front">
+                <div class="text-message"><h1>Entre em Contato</h1></div>
+                <form class="flip-card__form" action="">
+                  <input
+                    class="flip-card__input"
+                    name="email"
+                    placeholder="Email"
+                    type="email"
+                  />
+                  <input
+                    class="flip-card__input"
+                    name="text"
+                    placeholder="Escreva uma mensagem"
+                    type="text"
+                  />
+                  <button class="flip-card__btn">Enviar!</button>
+                </form>
+              </div>  
             </div>
-            <span>Enviar</span>
-          </button>
-        </form>
+          </label>
+        </div>
+      </div>
+      <div class="congratuilation">
+        <div class="title-thank">
+          <h1>OBRIGADO!</h1>
+        </div>
+        <div class="illustration">
+          <img src="../imgs/Happy student-pana.svg" alt="">
+        </div>
       </div>
     </section>
 
     <footer>
       <div class="footer-content">
-        <p>© 2024 João Silva. Todos os direitos reservados.</p>
+        <p>© 2024 Isaias Belarmina de Souza. Todos os direitos reservados.</p>
         <nav>
           <a href="#">Sobre</a>
           <a href="#">Trabalhos</a>
