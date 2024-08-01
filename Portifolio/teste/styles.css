@@ -109,7 +109,6 @@ nav h1 {
   font-weight: 700;
   font-size: 5rem;
   margin-bottom: 1rem;
-  width: 50%;
   font-family: 'Clash Display', sans-serif;
 }
 
@@ -117,10 +116,9 @@ nav h1 {
   font-family: 'Panchang', sans-serif;
   font-weight: 1000;
   font-size: 6rem;
-  width: 50%;
   position: relative;
   top: -10dvh;
-  right: 43px;
+  right: 0px;
 }
 
 .hero-titles{
@@ -271,7 +269,7 @@ footer {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .hero-content {
     text-align: left;
   }
@@ -284,6 +282,12 @@ footer {
   .projects {
     flex-direction: column;
     align-items: center;
+  }
+  .congratuilation{
+    display: none;
+  }
+  .hero h1, .hero h2{
+    font-size: 4rem;
   }
 }
 
