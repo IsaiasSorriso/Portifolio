@@ -1,26 +1,34 @@
-document.getElementById('downloadButton').addEventListener('click', function() {
-    const link = document.createElement('a');
-    link.href = '../imgs/ISAIAS-CURRICULO.pdf'; // substitua pelo caminho do seu arquivo
-    link.download = 'IsaiasCurriculo.pdf'; // substitua pelo nome do arquivo que será baixado
+document
+  .getElementById("downloadButton")
+  .addEventListener("click", function () {
+    const link = document.createElement("a");
+    link.href = "../imgs/ISAIAS-CURRICULO.pdf"; // substitua pelo caminho do seu arquivo
+    link.download = "IsaiasCurriculo.pdf"; // substitua pelo nome do arquivo que será baixado
     link.click();
   });
 
-    
-        (function() {
-            emailjs.init("isaiasbelarmina123@gmail.com"); // Coloque aqui seu User ID do EmailJS
-        })();
+const mail = document.getElementById('email').value;
+const message = document.getElementById('mensagem').value;
+const botaoEnviar = document.getElementById('botaoEnviar');
 
-        document.getElementsByClassName("flip-card__form").addEventListener('submit', function(event) {
-            event.preventDefault();
 
-            emailjs.send("SEU_SERVICE_ID", "SEU_TEMPLATE_ID", {
-                name: document.getElementById('name').value,
-                email: document.getElementById('email').value,
-                message: document.getElementById('message').value
-            })
-            .then(function(response) {
-                console.log('SUCCESS!', response.status, response.text);
-            }, function(error) {
-                console.log('FAILED...', error);
-            });
-        });
+botaoEnviar.addEventListener('click', function() {
+    if (mail != 0 && message!= 0) {
+    Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "isaiasbelarmina123@gmail.com",
+        Password: "BB1C1DAD5F2350E52C4A4FDD818DF920DBD3",
+        To: "them@website.com",
+        From: "isaiasbelarmina123@gmail.com",
+        Subject: `Enviando E-mail Com Javascript`,
+        Body: `Email: ${mail} \n \n ${message}`,
+      }).then(() => {
+      alert('Enviado');
+      location.reload();
+      });
+} else {
+    alert('Preencha todos os campos');
+}
+});
+
+

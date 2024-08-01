@@ -298,25 +298,27 @@
 
     <section class="Contact-email">
       <div class="wrapper">
-        <div class="card-switch">
+        <div class="card-switch"> 
           <label class="switch">
             <div class="flip-card__inner">
               <div class="flip-card__front">
                 <div class="text-message"><h1>Entre em Contato</h1></div>
-                <form class="flip-card__form" action="">
+                <form class="flip-card__form">
                   <input
                     class="flip-card__input"
                     name="email"
                     placeholder="Email"
                     type="email"
+                    id="email"
                   />
                   <input
                     class="flip-card__input"
                     name="text"
                     placeholder="Escreva uma mensagem"
                     type="text"
+                    id="mensagem"
                   />
-                  <button class="flip-card__btn">Enviar!</button>
+                  <button class="flip-card__btn" id="botaoEnviar">Enviar!</button>
                 </form>
               </div>  
             </div>
@@ -340,6 +342,6 @@
     </footer>
 
     <script src="script.js"></script>
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </body>
 </html>

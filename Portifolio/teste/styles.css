@@ -286,6 +286,14 @@ footer {
   .congratuilation{
     display: none;
   }
+  .flip-card__front{
+    position: relative;
+    width: 150%;
+    right: 28%;
+  }
+  .card-timeline{
+    width: 150px;
+  }
   .hero h1, .hero h2{
     font-size: 4rem;
   }
