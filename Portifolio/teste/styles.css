@@ -297,6 +297,7 @@ footer {
   .hero h1, .hero h2{
     font-size: 4rem;
   }
+  
 }
 
 /* BUTTONS */
@@ -583,7 +584,7 @@ ul {
   position: relative;
   width: calc(50% - 20px);
   left: -100px;
-  top: 6dvh;
+  top: 8dvh;
 }
 
 .timeline-item::before {

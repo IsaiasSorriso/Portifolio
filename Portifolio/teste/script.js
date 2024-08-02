@@ -2,7 +2,7 @@ document
   .getElementById("downloadButton")
   .addEventListener("click", function () {
     const link = document.createElement("a");
-    link.href = "../imgs/ISAIAS-CURRICULO.pdf"; // substitua pelo caminho do seu arquivo
+    link.href = "../imgs/IsaiasCurriculo.pdf"; // substitua pelo caminho do seu arquivo
     link.download = "IsaiasCurriculo.pdf"; // substitua pelo nome do arquivo que será baixado
     link.click();
   });
@@ -13,7 +13,7 @@ const botaoEnviar = document.getElementById('botaoEnviar');
 
 
 botaoEnviar.addEventListener('click', function() {
-    if (mail != 0 && message!= 0) {
+    if (mail && message) {
     Email.send({
         Host: "smtp.elasticemail.com",
         Username: "isaiasbelarmina123@gmail.com",
