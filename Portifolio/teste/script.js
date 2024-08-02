@@ -7,13 +7,14 @@ document
     link.click();
   });
 
+const nome = document.getElementById('nome').value;
 const mail = document.getElementById('email').value;
 const message = document.getElementById('mensagem').value;
 const botaoEnviar = document.getElementById('botaoEnviar');
 
 
 botaoEnviar.addEventListener('click', function() {
-    if (mail && message) {
+    if ( nome && mail && message  ) {
     Email.send({
         Host: "smtp.elasticemail.com",
         Username: "isaiasbelarmina123@gmail.com",

@@ -951,7 +951,7 @@ ul {
   gap: 20px;
 }
 
-.flip-card__form input[type="text"]{
+.flip-card__form #mensagem{
   height: 20dvh;
 }
 
