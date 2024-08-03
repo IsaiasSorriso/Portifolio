@@ -1,33 +1,37 @@
-var animacao = document.getElementById('mario');
-var animacao2 = document.getElementById('mario2');
+document
+  .getElementById("downloadButton")
+  .addEventListener("click", function () {
+    const link = document.createElement("a");
+    link.href = "../imgs/IsaiasCurriculo.pdf"; // substitua pelo caminho do seu arquivo
+    link.download = "IsaiasCurriculo.pdf"; // substitua pelo nome do arquivo que será baixado
+    link.click();
+  });
 
-animacao.onclick = function () {
-    animacao.classList.add('Animação')
-    animacao.src = 'imgs/mariawaking.gif';
-    animacao.style.width = '100px';
-    animacao.style.bottom = '5vh';
-    const changeTime = 1000;
-    const Time = 3000;
-    const TimeFinal = 8000;
+const nome = document.getElementById('nome').value;
+const mail = document.getElementById('email').value;
+const message = document.getElementById('mensagem').value;
+const botaoEnviar = document.getElementById('botaoEnviar');
 
-    setTimeout(() => {
-        animacao.style.display = 'none'; // Troca para a nova imagem
-        animacao2.classList.add('Animação2')
-    }, Time);
-    setTimeout(() => {
-        animacao2.classList.remove('Animação2');
-        animacao2.style.left='72%';
-        animacao2.src = 'imgs/mariodancing.gif';
-        animacao2.style.width='80px';
-        animacao2.style.bottom='-94vh';
-    }, TimeFinal);
-
-    
-}
-
-document.getElementById('downloadButton').addEventListener('click', function() {
-  const link = document.createElement('a');
-  link.href = 'imgs/CurriculoIsaias.pdf'; // substitua pelo caminho do seu arquivo
-  link.download = 'CurriculoIsaias.pdf'; // substitua pelo nome do arquivo que será baixado
-  link.click();
+botaoEnviar.addEventListener('click', function() {
+  location
 });
+// botaoEnviar.addEventListener('click', function() {
+//     if ( nome && mail && message ) {
+//     Email.send({
+//         Host: "smtp.elasticemail.com",
+//         Username: "isaiasbelarmina123@gmail.com",
+//         Password: "BB1C1DAD5F2350E52C4A4FDD818DF920DBD3",
+//         To: "teste@gmail.com",
+//         From: "isaiasbelarmina123@gmail.com",
+//         Subject: `Enviando E-mail Com Javascript`,
+//         Body: `Email: ${mail} \n \n ${message}`,
+//       }).then(() => {
+//       alert('Enviado');
+//       location.reload();
+//       });
+// } else {
+//     alert('Preencha todos os campos');
+// }
+// });
+
+
